@@ -8,9 +8,6 @@
 
     // URL Locais    
     urlFilme     = "http://localhost:8089/filme";
-    urlVenda     = "http://localhost:8089/venda";
-    urlCliente   = "http://localhost:8089/cliente";
-    urlRelatorio = "http://localhost:8089/relario";    
 
     FilmeController.$inject = ['$scope', '$http', 'FilmeService'];
     function FilmeController($scope, $http, FilmeService) {
