@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html> 
+<html ng-app="trabfinalApp"> 
     <head>
         <title> Trabalho Final DM104 </title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="node_modules\bootstrap\dist\css\bootstrap.css"/>
-        <script type="text/javascript" src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-resource/angular-resource.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>        
     </head>
 
     <body>
@@ -13,55 +15,48 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                <a class="navbar-brand" href="#">WebSiteName</a>
+                    <a class="navbar-brand" href="#">Trabalho Final DM104</a>
                 </div>
                 <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Page 1</a></li>
-                <li><a href="#">Page 2</a></li>
-                <li><a href="#">Page 3</a></li>
+                    <li class="active"><a href="index.html">Principal</a></li>
+                    <li><a href="cliente.html">Controle de Clientes</a></li>
+                    <li><a href="filmes.html">Controle de Filmes</a></li>
+                    <li><a href="vendas.html">Controle de Vendas</a></li>
+                    <li><a href="relatorio.html">Relatório</a></li>
                 </ul>
             </div>
         </nav>
 
-        <div class="container">
-            <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+         <div class="container" ng-controller="filmeController" ng-init="getFilmes()">
+            <form class="well form-horizontal" action=" " method="post"  id="">
                
                 <fieldset>
 
                 <!-- Form Name -->
-                <legend>Cadastro de filmes</legend>
+                <legend>Projeto Final DM104</legend>
 
-                <!-- Text input-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Nome do filme</label>  
-                    <div class="col-md-4 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
-                            <input name="first_name" placeholder="Insira o nome do filme" class="form-control"  type="text">
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Success message -->
-                <div class="alert alert-success" role="alert" id="success_message">
-                    Success <i class="glyphicon glyphicon-thumbs-up"></i> 
-                    Thanks for contacting us, we will get back to you shortly.
-                </div>
+                    Sistema consiste em uma revenda de filmes, 
+                    deve cadastrar o filme , o cliente e logo apos o venda.
+                    <br/><br/>
+                    O Relatorio é dos 5 filmes mais vendidos.
 
-                <!-- Button -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label"></label>
-                    <div class="col-md-4">
-                        <button type="submit" class="btn btn-warning" >
-                            Enviar os dados 
-                            <span class="glyphicon glyphicon-send">
-                        </span></button>
-                    </div>
-                </div>
 
+                    Instruções : 
+                                     Script do banco , pasta BANCO DE DADOS
+
+                    <br/><br/><br/>
+
+               
+                    Desenvolvido por :                
+                                Lucas<br/>
+                                Rafael
                 </fieldset>
             </form>
+         
+
+                  
+       
+            
         </div>
     
 
